@@ -1,0 +1,29 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-rows: 10rem 10rem;
+    grid-gap: 10px;
+    grid-template-areas:
+      "Report Work Play Study"
+      "Report Exercise Social SelfCare";
+    .grid-item {
+      border: 2px solid black;
+      border-radius: 15px;
+      background-color: purple;
+      text-align: center;
+    }
+    .grid-item-1 {
+      grid-area: Report;
+    }
+  }
+}
